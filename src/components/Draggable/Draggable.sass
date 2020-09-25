@@ -1,0 +1,33 @@
+.draggable
+  display: block
+  width: 100%
+
+  &__container
+    display: block
+    position: relative
+    width: 80%
+    height: 1000px
+    margin: auto
+    overflow: hidden
+
+  &__item
+    display: block
+    position: absolute
+    height: 300px
+    width: 300px
+    background-color: $alto
+    padding: 50px
+    font-size: 50px
+
+    &.-red
+      background-color: $red
+      top: 300px
+
+    &.-blue
+      top: 300px 
+      left: 300px
+      background-color: $cerulean
+
+    &.-yellow
+      top: 600px
+      background-color: $yellow

@@ -1,0 +1,57 @@
+.droppable
+  display: block
+  width: 100%
+
+  &__container
+    display: block
+    position: relative
+    width: 80%
+    height: 1000px
+    margin: auto
+    overflow: hidden
+
+  &__title
+    text-align: center
+    font-size: 80px
+
+  &__item
+    display: block
+    position: absolute
+    height: 300px
+    width: 300px
+    background-color: $yellow
+    padding: 50px
+    font-size: 40px
+
+    &.-circle
+      top: 450px
+      border-radius: 50%
+      background-color: $red
+
+    &.-dropCircle
+      display: flex
+      align-items: center
+      justify-content: center
+      top: 100px
+      right: 100px
+      width: 305px
+      height: 305px
+      border-radius: 50%
+      background-color: $alto
+      z-index: -1
+
+    &.-dropSquare
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+      top: 450px
+      right: 100px
+      width: 305px
+      height: 305px
+      background-color: $alto
+      z-index: -1
+
+    &.-accept
+      background-color: $green
+      box-shadow: 10px -8px 91px 51px lighten($green, 5%)

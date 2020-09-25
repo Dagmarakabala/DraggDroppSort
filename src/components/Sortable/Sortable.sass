@@ -1,0 +1,39 @@
+.sortable
+  display: block
+  width: 100%
+
+  &__container
+    display: flex
+    flex-wrap: nowrap
+    position: relative
+    width: 80%
+    height: 1000px
+    margin: auto
+    overflow: hidden
+
+  &__box
+    width: 300px
+    margin: auto
+    font-size: 30px 
+    text-align: center
+
+  &__item
+    border: 1px solid $black
+    padding: 20px
+    font-size: 40px
+    text-align: left
+
+    &:before
+      content: '↕'
+      font-weight: bold
+      margin-right: 10px
+
+.-green
+  background-color: $green
+    
+.-yellow
+  background-color: lighten($yellow, 30%)
+
+.-red
+  background-color: lighten($red, 30%)
+  
